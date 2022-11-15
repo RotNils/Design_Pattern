@@ -27,7 +27,7 @@ public class SmartStrategy implements OrderingStrategy{
         }
         drinks.clear();
         recipes.clear();
-    };
+    }
 
     @Override
     public void happyHourEnded(StringBar bar) {}
