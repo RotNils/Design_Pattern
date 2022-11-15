@@ -1,23 +1,12 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class StringBar extends Bar{
-
-    boolean isHappyHour = false;
     public StringBar(){
-        isHappyHour = false;
-    }
-    @Override
-    public boolean isHappyHour() {
-        return isHappyHour;
+        super();
     }
 
-    @Override
-    public void startHappyHour() {
-        isHappyHour = true;
-        notifyObservers();
-    }
-
-    @Override
-    public void endHappyHour() {
-        isHappyHour = false;
-        notifyObservers();
+    public void order(StringDrink drink, StringRecipe recipe){
+        recipe.mix(drink);
     }
 }
